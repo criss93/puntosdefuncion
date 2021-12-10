@@ -28,6 +28,14 @@ public class frm_punto_cu extends javax.swing.JInternalFrame {
         txtUUCW.setText(uucw.toString());
     }
 
+    public Integer getSuma() {
+        return suma;
+    }
+
+    public void setSuma(Integer suma) {
+        this.suma = suma;
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

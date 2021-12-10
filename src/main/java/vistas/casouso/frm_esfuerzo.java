@@ -7,15 +7,23 @@ package vistas.casouso;
 
 /**
  *
- * @author Mari
+ * @author Cristian
  */
 public class frm_esfuerzo extends javax.swing.JInternalFrame {
+    float puntoDeCasoDeUsoAjustado;
+    float CF;
 
     /**
      * Creates new form frm_esfuerzo
      */
-    public frm_esfuerzo() {
-        initComponents();
+    public frm_esfuerzo(float puntoDeCasoDeUsoAjustado, float CF) {
+        this.puntoDeCasoDeUsoAjustado = puntoDeCasoDeUsoAjustado;
+        this.CF = CF;
+        //edición campos de txt
+    }
+
+    public float calcularEsfuerzo (float UCP, float CF){
+        return UCP * CF;
     }
 
     /**
@@ -42,7 +50,7 @@ public class frm_esfuerzo extends javax.swing.JInternalFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 274, Short.MAX_VALUE)
+            .addGap(0, 278, Short.MAX_VALUE)
         );
 
         pack();

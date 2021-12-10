@@ -25,11 +25,11 @@ public class conexionsql {
     //String url2 = "jdbc:postgresql://localhost/casodeuso";    //Maricel
     String url = "jdbc:postgresql://localhost:5432/complejidad";
     String url2 = "jdbc:postgresql://localhost:5432/casodeuso";
-    String usuario = "root";
+    String usuario = "root";//CRIS
     //String clave = "admin";   //Esta es la pass de Maricel
-    String clave = "root";
+    String clave = "root";//CRIS
     
-        String password ="root";
+        String password ="root";//CRIS
   
 
     
@@ -149,6 +149,18 @@ public String consultarAporte(Integer valor) throws SQLException{
            aporte = rs.getString("aporte");
        }
        return aporte;
+}
+
+public String consultarComplejidadAmbiental(String tipo) throws SQLException{
+    String SQL = "SELECT peso FROM ambiental where tipo = '" + tipo + "'";
+    Statement stmt = conn2.createStatement();
+    ResultSet rs = stmt.executeQuery(SQL);
+
+    String peso = "";
+    while ( rs.next() ) {
+        peso = rs.getString("peso");
+    }
+    return peso;
 }
 
 public void cerrar (){

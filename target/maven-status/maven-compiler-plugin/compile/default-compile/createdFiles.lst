@@ -21,10 +21,12 @@ vistas\puntofuncion\form_puntofuncion$2.class
 vistas\puntofuncion\form_puntofuncion$5.class
 vistas\puntofuncion\form_calculo$1.class
 vistas\puntofuncion\form_ajuste$7.class
+vistas\casouso\frm_complejidad_ambiental$8.class
 vistas\casouso\frm_cu_ajustado$1.class
 vistas\puntofuncion\form_ajuste$11.class
 vistas\puntofuncion\form_ajuste$18.class
 vistas\casouso\frm_punto_cu$1.class
+vistas\casouso\frm_peso_cu$13.class
 vistas\puntofuncion\form_ajuste$9.class
 vistas\casouso\frm_complejidad_tecnica$3.class
 vistas\casouso\frm_principal$3.class
@@ -47,6 +49,7 @@ vistas\puntofuncion\arranque.class
 vistas\puntofuncion\form_puntofuncion$9$1.class
 vistas\puntofuncion\conectar$4.class
 vistas\casouso\frm_complejidad_tecnica$9.class
+vistas\casouso\frm_complejidad_ambiental$9.class
 vistas\puntofuncion\form_ajuste$2.class
 vistas\puntofuncion\form_puntofuncion$6.class
 vistas\casouso\frm_actores.class
@@ -67,9 +70,12 @@ vistas\puntofuncion\form_ajuste$8.class
 vistas\puntofuncion\form_ajuste.class
 vistas\puntofuncion\form_puntofuncion$9.class
 vistas\puntofuncion\form_ajuste$10.class
+vistas\casouso\frm_complejidad_ambiental$13.class
 vistas\casouso\frm_cu_ajustado.class
 vistas\casouso\frm_complejidad_tecnica$4.class
+vistas\casouso\frm_complejidad_ambiental$10.class
 vistas\casouso\frm_peso_cu.class
+vistas\casouso\frm_complejidad_ambiental$7.class
 vistas\casouso\frm_principal$2.class
 vistas\casouso\frm_complejidad_tecnica$1.class
 vistas\casouso\frm_complejidad_ambiental$4.class
@@ -84,6 +90,8 @@ vistas\puntofuncion\conectar$1.class
 vistas\casouso\frm_peso_cu$10.class
 vistas\puntofuncion\form_puntofuncion$4.class
 vistas\casouso\frm_complejidad_tecnica$7.class
+vistas\casouso\frm_complejidad_ambiental$11.class
+vistas\casouso\frm_complejidad_ambiental$5.class
 vistas\casouso\frm_peso_cu$9.class
 vistas\puntofuncion\form_ajuste$6.class
 vistas\casouso\frm_actores$3.class
@@ -100,3 +108,5 @@ vistas\puntofuncion\conectar.class
 vistas\casouso\frm_principal$1.class
 vistas\puntofuncion\form_ajuste$14.class
 vistas\casouso\frm_complejidad_tecnica$6.class
+vistas\casouso\frm_complejidad_ambiental$6.class
+vistas\casouso\frm_complejidad_ambiental$12.class

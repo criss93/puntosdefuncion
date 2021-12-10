@@ -31,6 +31,14 @@ public class frm_complejidad_tecnica extends javax.swing.JInternalFrame {
         initComponents();
         con2.conectarCU();
     }
+
+    public float getTCF() {
+        return TCF;
+    }
+
+    public void setTCF(float TCF) {
+        this.TCF = TCF;
+    }
  
     public void agregarLista(String tipo, float peso){
        Peso p = new Peso (tipo,peso);

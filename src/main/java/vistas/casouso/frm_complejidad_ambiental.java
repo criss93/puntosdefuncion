@@ -5,17 +5,76 @@
  */
 package vistas.casouso;
 
+import classes.Peso;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import sql.conexionsql;
+
 /**
  *
- * @author Mari
+ * @author Cristian
  */
 public class frm_complejidad_ambiental extends javax.swing.JInternalFrame {
 
-    /**
-     * Creates new form frm_complejidad_ambiental
-     */
+    conexionsql con2 = new conexionsql();
+    ArrayList<Peso> listaPeso  = new ArrayList<>();
+    ArrayList<Integer> listaValor = new ArrayList<>();
+    float eFactor;
+    float EF;
+    
     public frm_complejidad_ambiental() {
         initComponents();
+        con2.conectarCU();
+    }
+
+    public float getEF() {
+        return EF;
+    }
+
+    public void setEF(float EF) {
+        this.EF = EF;
+    }
+    
+    public void agregarLista(String tipo, float peso){
+       Peso p = new Peso (tipo,peso);
+       listaPeso.add(p);
+    }
+    
+    public void agregarListaValor(Integer valor){
+        listaValor.add(valor);
+    }
+    
+    public float CalcularResultado(float resultado){
+        //MODIFICAR LA SIGUIENTE LINEA, SOLO ESTÁ PUESTA PARA QUE COMPILE
+        float multiplicacion;
+        
+        float p;
+        int v;
+        multiplicacion = 0;
+        eFactor = 0;
+//        for (int i=0; i < listaPeso.size(); i++) {
+//            for (int j=0; j < listaValor.size();j++){
+//                p = listaPeso.get(i).getPeso();
+//                v = listaValor.get(j);
+//               
+//                multiplicacion = p * v;
+//                eFactor = eFactor + multiplicacion;      
+//            }
+//        }
+        for (int i=0; i<listaPeso.size();i++){
+            p = listaPeso.get(i).getPeso();
+            v = listaValor.get(i);
+            System.out.print("P: "+p+" - ");
+            System.out.print("V: "+v+" ");
+            multiplicacion = p * v;
+            System.out.println("Multip.: "+multiplicacion);
+            eFactor = eFactor + multiplicacion;
+        }
+        resultado = eFactor;
+        System.out.println("Resultado de calculo: " +resultado);
+        return resultado;
     }
 
     /**
@@ -58,7 +117,7 @@ public class frm_complejidad_ambiental extends javax.swing.JInternalFrame {
         jLabel13 = new javax.swing.JLabel();
         txtEFactor = new javax.swing.JTextField();
         txtEF = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        cargarButton = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         txtRelevancia01 = new javax.swing.JTextField();
@@ -124,20 +183,60 @@ public class frm_complejidad_ambiental extends javax.swing.JInternalFrame {
         Peso8textField.setPreferredSize(new java.awt.Dimension(40, 20));
 
         RelevanciajComboBox01.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Irrelevante", "Baja", "Moderada", "Promedio", "Significativa", "Esencial" }));
+        RelevanciajComboBox01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RelevanciajComboBox01ActionPerformed(evt);
+            }
+        });
 
         RelevanciajComboBox02.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Irrelevante", "Baja", "Moderada", "Promedio", "Significativa", "Esencial" }));
+        RelevanciajComboBox02.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RelevanciajComboBox02ActionPerformed(evt);
+            }
+        });
 
         RelevanciajComboBox03.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Irrelevante", "Baja", "Moderada", "Promedio", "Significativa", "Esencial" }));
+        RelevanciajComboBox03.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RelevanciajComboBox03ActionPerformed(evt);
+            }
+        });
 
         RelevanciajComboBox04.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Irrelevante", "Baja", "Moderada", "Promedio", "Significativa", "Esencial" }));
+        RelevanciajComboBox04.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RelevanciajComboBox04ActionPerformed(evt);
+            }
+        });
 
         RelevanciajComboBox05.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Irrelevante", "Baja", "Moderada", "Promedio", "Significativa", "Esencial" }));
+        RelevanciajComboBox05.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RelevanciajComboBox05ActionPerformed(evt);
+            }
+        });
 
         RelevanciajComboBox06.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Irrelevante", "Baja", "Moderada", "Promedio", "Significativa", "Esencial" }));
+        RelevanciajComboBox06.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RelevanciajComboBox06ActionPerformed(evt);
+            }
+        });
 
         RelevanciajComboBox07.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Irrelevante", "Baja", "Moderada", "Promedio", "Significativa", "Esencial" }));
+        RelevanciajComboBox07.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RelevanciajComboBox07ActionPerformed(evt);
+            }
+        });
 
         RelevanciajComboBox08.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Irrelevante", "Baja", "Moderada", "Promedio", "Significativa", "Esencial" }));
+        RelevanciajComboBox08.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RelevanciajComboBox08ActionPerformed(evt);
+            }
+        });
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel12.setText("EFactor =");
@@ -156,18 +255,23 @@ public class frm_complejidad_ambiental extends javax.swing.JInternalFrame {
         txtEF.setMinimumSize(new java.awt.Dimension(40, 20));
         txtEF.setPreferredSize(new java.awt.Dimension(40, 20));
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton1.setText("Cargar");
-        jButton1.setPreferredSize(new java.awt.Dimension(120, 25));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        cargarButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        cargarButton.setText("Cargar");
+        cargarButton.setPreferredSize(new java.awt.Dimension(120, 25));
+        cargarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                cargarButtonActionPerformed(evt);
             }
         });
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton2.setText("Calcular");
         jButton2.setPreferredSize(new java.awt.Dimension(120, 25));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton3.setText("Salir");
@@ -257,7 +361,7 @@ public class frm_complejidad_ambiental extends javax.swing.JInternalFrame {
                 .addContainerGap(144, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cargarButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(92, 92, 92)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(94, 94, 94)
@@ -328,7 +432,7 @@ public class frm_complejidad_ambiental extends javax.swing.JInternalFrame {
                     .addComponent(txtEF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(50, 50, 50)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cargarButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(76, 76, 76))
@@ -345,14 +449,143 @@ public class frm_complejidad_ambiental extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtEFactorActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void cargarButtonActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        try {
+            Peso1textField.setText(con2.consultarComplejidadAmbiental("E1"));
+            agregarLista("E1",Float.parseFloat(Peso1textField.getText()));
+            //System.out.println(Peso1textField.getText());
+
+            Peso2textField.setText(con2.consultarComplejidadAmbiental("E2"));
+            agregarLista("E2",Float.parseFloat(Peso2textField.getText()));
+            //System.out.println(Peso2textField.getText());
+
+            Peso3textField.setText(con2.consultarComplejidadAmbiental("E3"));
+            agregarLista("E3",Float.parseFloat(Peso3textField.getText()));
+            //System.out.println(Peso3textField.getText());
+
+            Peso4textField.setText(con2.consultarComplejidadAmbiental("E4"));
+            agregarLista("E4",Float.parseFloat(Peso4textField.getText()));
+            //System.out.println(Peso4textField.getText());
+
+            Peso5textField.setText(con2.consultarComplejidadAmbiental("E5"));
+            agregarLista("E5",Float.parseFloat(Peso5textField.getText()));
+            //System.out.println(Peso5textField.getText());
+
+            Peso6textField.setText(con2.consultarComplejidadAmbiental("E6"));
+            agregarLista("E6",Float.parseFloat(Peso6textField.getText()));
+            //System.out.println(Peso6textField.getText());
+
+            Peso7textField.setText(con2.consultarComplejidadAmbiental("E7"));
+            agregarLista("E7",Float.parseFloat(Peso7textField.getText()));
+            //System.out.println(Peso7textField.getText());
+
+            Peso8textField.setText(con2.consultarComplejidadAmbiental("E8"));
+            agregarLista("E8",Float.parseFloat(Peso8textField.getText()));
+            //System.out.println(Peso8textField.getText());
+
+        } catch (SQLException ex) {
+            Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }                                            
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void RelevanciajComboBox01ActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+        try {
+            txtRelevancia01.setText(con2.consultarRelevancia(RelevanciajComboBox01.getSelectedItem().toString()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia01.getText()));
+        } catch (SQLException ex) {
+            Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }                                                     
+
+    private void RelevanciajComboBox02ActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+        try {
+            txtRelevancia02.setText(con2.consultarRelevancia(RelevanciajComboBox02.getSelectedItem().toString()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia02.getText()));
+        } catch (SQLException ex) {
+            Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }                                                     
+
+    private void RelevanciajComboBox03ActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+        try {
+            txtRelevancia03.setText(con2.consultarRelevancia(RelevanciajComboBox03.getSelectedItem().toString()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia03.getText()));
+        } catch (SQLException ex) {
+            Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }                                                     
+
+    private void RelevanciajComboBox04ActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+        try {
+            txtRelevancia04.setText(con2.consultarRelevancia(RelevanciajComboBox04.getSelectedItem().toString()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia04.getText()));
+        } catch (SQLException ex) {
+            Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }                                                     
+
+    private void RelevanciajComboBox05ActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+        try {
+            txtRelevancia05.setText(con2.consultarRelevancia(RelevanciajComboBox05.getSelectedItem().toString()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia05.getText()));
+        } catch (SQLException ex) {
+            Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }                                                     
+
+    private void RelevanciajComboBox06ActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+        try {
+            txtRelevancia06.setText(con2.consultarRelevancia(RelevanciajComboBox06.getSelectedItem().toString()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia06.getText()));
+        } catch (SQLException ex) {
+            Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }                                                     
+
+    private void RelevanciajComboBox07ActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+        try {
+            txtRelevancia07.setText(con2.consultarRelevancia(RelevanciajComboBox07.getSelectedItem().toString()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia07.getText()));
+        } catch (SQLException ex) {
+            Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }                                                     
+
+    private void RelevanciajComboBox08ActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+        try {
+            txtRelevancia08.setText(con2.consultarRelevancia(RelevanciajComboBox08.getSelectedItem().toString()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia08.getText()));
+        } catch (SQLException ex) {
+            Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }                                                     
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        agregarListaValor(Integer.parseInt(txtRelevancia01.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia02.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia03.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia04.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia05.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia06.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia07.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia08.getText()));
+        
+        for (int j=0; j < listaValor.size();j++){
+            System.out.println(listaValor.get(j));
+        }
+        float eFactor2 = 0;
+        float tf = 0;
+        eFactor2 = this.CalcularResultado(eFactor2);
+        txtEFactor.setText(Float.toString(eFactor2));
+        
+        tf = (float) (1.4 + ((-0.03) * eFactor2));
+        txtEF.setText(Float.toString(tf));
+    }                                        
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -372,7 +605,7 @@ public class frm_complejidad_ambiental extends javax.swing.JInternalFrame {
     private javax.swing.JComboBox<String> RelevanciajComboBox06;
     private javax.swing.JComboBox<String> RelevanciajComboBox07;
     private javax.swing.JComboBox<String> RelevanciajComboBox08;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton cargarButton;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;

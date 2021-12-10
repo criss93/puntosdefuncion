@@ -10,7 +10,10 @@ package vistas.casouso;
  * @author Mari
  */
 public class frm_cu_ajustado extends javax.swing.JInternalFrame {
-
+    Integer casoDeUsoSinAjustar;
+    float factoresDeComplejidadTecnica;
+    float factoresDeComplejidadAmbiental;
+    float puntoDeCasoDeUsoAjustado;
     /**
      * Creates new form frm_cu_ajustado
      */
@@ -18,6 +21,33 @@ public class frm_cu_ajustado extends javax.swing.JInternalFrame {
         initComponents();
     }
 
+    public frm_cu_ajustado(Integer casoDeUsoSinAjustar, float factoresDeComplejidadTecnica, float factoresDeComplejidadAmbiental) {
+        initComponents();
+        this.casoDeUsoSinAjustar = casoDeUsoSinAjustar;
+        this.factoresDeComplejidadTecnica = factoresDeComplejidadTecnica;
+        this.factoresDeComplejidadAmbiental = factoresDeComplejidadAmbiental;
+        //System.out.println("Resultado UUCP: "+casoDeUsoSinAjustar);
+        //Lo siguiente lo uso para castear y luego editar los campos de texto
+        String text = String.valueOf(casoDeUsoSinAjustar);
+        this.txtFieldUUCP.setText(text);
+        text = Float.toString(this.factoresDeComplejidadTecnica);
+        this.txtFieldTCF.setText(text);
+        text = Float.toString(this.factoresDeComplejidadAmbiental);
+        this.txtFieldEF.setText(text);
+    }
+
+    public float getPuntoDeCasoDeUsoAjustado() {
+        return puntoDeCasoDeUsoAjustado;
+    }
+
+    public void setPuntoDeCasoDeUsoAjustado(float puntoDeCasoDeUsoAjustado) {
+        this.puntoDeCasoDeUsoAjustado = puntoDeCasoDeUsoAjustado;
+    }
+    
+    public float calcularUCP(){
+        return casoDeUsoSinAjustar * factoresDeComplejidadTecnica * factoresDeComplejidadAmbiental;
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -123,9 +153,10 @@ public class frm_cu_ajustado extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCalcularActionPerformed
+    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        puntoDeCasoDeUsoAjustado = calcularUCP();
+        this.txtFieldTotal.setText(Float.toString(puntoDeCasoDeUsoAjustado));
+    }                                           
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

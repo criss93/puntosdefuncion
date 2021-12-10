@@ -125,7 +125,8 @@ public class conectar extends javax.swing.JFrame {
 
     private void btncerrarventanaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncerrarventanaActionPerformed
 
-        this.dispose();
+        //this.dispose();
+        System.exit(0);
         
     }//GEN-LAST:event_btncerrarventanaActionPerformed
 

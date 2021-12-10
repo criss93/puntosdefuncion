@@ -159,6 +159,11 @@ public class frm_peso_cu extends javax.swing.JInternalFrame {
 
         textTrans.setFont(new java.awt.Font("Montserrat", 1, 13)); // NOI18N
         textTrans.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        textTrans.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textTransActionPerformed(evt);
+            }
+        });
         jPanel2.add(textTrans, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 69, 39));
 
         cmbTransacciones.setFont(new java.awt.Font("Montserrat", 1, 18)); // NOI18N
@@ -388,6 +393,11 @@ public class frm_peso_cu extends javax.swing.JInternalFrame {
     private void btnCalculo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculo1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCalculo1ActionPerformed
+
+    
+    private void textTransActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+    }                                         
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

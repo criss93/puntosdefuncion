@@ -14,6 +14,11 @@ public class frm_principal extends javax.swing.JFrame {
     frm_actores ventana1;
     frm_peso_cu ventana2;
     frm_punto_cu ventana3;
+    frm_complejidad_tecnica ventana4;
+    frm_complejidad_ambiental ventana5;
+    frm_cu_ajustado ventana6;
+    frm_esfuerzo ventana7;
+    
     /**
      * Creates new form frm_casouso
      */
@@ -158,27 +163,28 @@ public class frm_principal extends javax.swing.JFrame {
     }//GEN-LAST:event_itemUUCPActionPerformed
 
     private void itemTCFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemTCFActionPerformed
-        frm_complejidad_tecnica ventana4 = new frm_complejidad_tecnica();
+        ventana4 = new frm_complejidad_tecnica();
         escritorio.add(ventana4);
         ventana4.show();
     }//GEN-LAST:event_itemTCFActionPerformed
 
     private void itemEFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemEFActionPerformed
-        frm_complejidad_ambiental ventana5 = new frm_complejidad_ambiental();
+        ventana5 = new frm_complejidad_ambiental();
         escritorio.add(ventana5);
         ventana5.show();
     }//GEN-LAST:event_itemEFActionPerformed
 
     private void itemUCPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemUCPActionPerformed
-        frm_cu_ajustado ventana6 = new frm_cu_ajustado();
+        //frm_cu_ajustado ventana6 = new frm_cu_ajustado();
+        ventana6 = new frm_cu_ajustado(ventana3.getSuma(), ventana4.getTCF() , ventana5.getEF());
         escritorio.add(ventana6);
         ventana6.show();
     }//GEN-LAST:event_itemUCPActionPerformed
 
     private void itemEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemEActionPerformed
-        frm_esfuerzo ventana7 = new frm_esfuerzo();
-        escritorio.add(ventana7);
-        ventana7.show();
+        //frm_esfuerzo ventana7 = new frm_esfuerzo();
+        //escritorio.add(ventana7);
+        //ventana7.show();
     }//GEN-LAST:event_itemEActionPerformed
 
     /**
