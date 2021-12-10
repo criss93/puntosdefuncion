@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.5.0" sequence="0" timestamp="1638770782161" analysisTimestamp="1638770793246" release="">
+  <Project>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\classes\Complejidad.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\classes\Factor.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\classes\Peso.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\sql\conexionsql.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_actores.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_actores$1.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_actores$2.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_actores$3.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_actores$4.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_actores$5.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_actores$6.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_ambiental.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_ambiental$1.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_ambiental$2.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_ambiental$3.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_ambiental$4.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_tecnica.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_tecnica$1.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_tecnica$10.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_tecnica$11.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_tecnica$12.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_tecnica$13.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_tecnica$14.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_tecnica$15.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_tecnica$16.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_tecnica$2.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_tecnica$3.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_tecnica$4.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_tecnica$5.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_tecnica$6.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_tecnica$7.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_tecnica$8.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_complejidad_tecnica$9.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_cu_ajustado.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_cu_ajustado$1.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_esfuerzo.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_peso_cu.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_peso_cu$1.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_peso_cu$10.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_peso_cu$11.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_peso_cu$12.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_peso_cu$2.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_peso_cu$3.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_peso_cu$4.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_peso_cu$5.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_peso_cu$6.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_peso_cu$7.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_peso_cu$8.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_peso_cu$9.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_principal.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_principal$1.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_principal$2.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_principal$3.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_principal$4.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_principal$5.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_principal$6.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_principal$7.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_principal$8.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_punto_cu.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_punto_cu$1.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\casouso\frm_punto_cu$2.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\arranque.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\conectar.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\conectar$1.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\conectar$2.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\conectar$3.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\conectar$4.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$1.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$10.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$11.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$12.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$13.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$14.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$15.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$16.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$17.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$18.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$18$1.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$2.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$3.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$4.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$5.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$6.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$7.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$8.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_ajuste$9.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_calculo.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_calculo$1.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_calculo$2.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_calculo$2$1.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_puntofuncion.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_puntofuncion$1.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_puntofuncion$2.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_puntofuncion$3.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_puntofuncion$4.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_puntofuncion$5.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_puntofuncion$6.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_puntofuncion$7.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_puntofuncion$8.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_puntofuncion$9.class</Jar>
+    <Jar>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes\vistas\puntofuncion\form_puntofuncion$9$1.class</Jar>
+    <AuxClasspathEntry>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-17.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\cocco\.m2\repository\org\netbeans\external\AbsoluteLayout\RELEASE126\AbsoluteLayout-RELEASE126.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\cocco\.m2\repository\org\postgresql\postgresql\42.3.1\postgresql-42.3.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\cocco\.m2\repository\postgresql\postgresql\9.1-901-1.jdbc4\postgresql-9.1-901-1.jdbc4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\sonar\findbugs\annotations.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\sonar\findbugs\jsr305.jar</AuxClasspathEntry>
+    <WrkDir>C:\Users\cocco\Documents\NetBeansProjects\puntosdefuncion\target\sonar</WrkDir>
+  </Project>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>makeConcatWithConstants</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 6 Dec 2021 03:06:22 -0300" total_classes="102" referenced_classes="488" total_bugs="0" total_size="3229" num_packages="4" java_version="17.0.1" vm_version="17.0.1+12-LTS-39" cpu_seconds="19.88" clock_seconds="4.62" peak_mbytes="537.53" alloc_mbytes="4084.00" gc_seconds="0.08">
+    <FileStats path="classes/Complejidad.java" bugCount="0" size="25"/>
+    <FileStats path="classes/Factor.java" bugCount="0" size="28"/>
+    <FileStats path="classes/Peso.java" bugCount="0" size="18"/>
+    <FileStats path="sql/conexionsql.java" bugCount="0" size="100"/>
+    <FileStats path="vistas/casouso/frm_actores.java" bugCount="0" size="202"/>
+    <FileStats path="vistas/casouso/frm_complejidad_ambiental.java" bugCount="0" size="331"/>
+    <FileStats path="vistas/casouso/frm_complejidad_tecnica.java" bugCount="0" size="635"/>
+    <FileStats path="vistas/casouso/frm_cu_ajustado.java" bugCount="0" size="101"/>
+    <FileStats path="vistas/casouso/frm_esfuerzo.java" bugCount="0" size="22"/>
+    <FileStats path="vistas/casouso/frm_peso_cu.java" bugCount="0" size="356"/>
+    <FileStats path="vistas/casouso/frm_principal.java" bugCount="0" size="186"/>
+    <FileStats path="vistas/casouso/frm_punto_cu.java" bugCount="0" size="118"/>
+    <FileStats path="vistas/puntofuncion/arranque.java" bugCount="0" size="13"/>
+    <FileStats path="vistas/puntofuncion/conectar.java" bugCount="0" size="123"/>
+    <FileStats path="vistas/puntofuncion/form_ajuste.java" bugCount="0" size="587"/>
+    <FileStats path="vistas/puntofuncion/form_calculo.java" bugCount="0" size="126"/>
+    <FileStats path="vistas/puntofuncion/form_puntofuncion.java" bugCount="0" size="258"/>
+    <PackageStats package="classes" total_bugs="0" total_types="3" total_size="71">
+      <ClassStats class="classes.Complejidad" sourceFile="Complejidad.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="classes.Factor" sourceFile="Factor.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="classes.Peso" sourceFile="Peso.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="sql" total_bugs="0" total_types="1" total_size="100">
+      <ClassStats class="sql.conexionsql" sourceFile="conexionsql.java" interface="false" size="100" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="vistas.casouso" total_bugs="0" total_types="57" total_size="1951">
+      <ClassStats class="vistas.casouso.frm_actores" sourceFile="frm_actores.java" interface="false" size="160" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_actores$1" sourceFile="frm_actores.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_actores$2" sourceFile="frm_actores.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_actores$3" sourceFile="frm_actores.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_actores$4" sourceFile="frm_actores.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_actores$5" sourceFile="frm_actores.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_actores$6" sourceFile="frm_actores.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_ambiental" sourceFile="frm_complejidad_ambiental.java" interface="false" size="303" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_ambiental$1" sourceFile="frm_complejidad_ambiental.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_ambiental$2" sourceFile="frm_complejidad_ambiental.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_ambiental$3" sourceFile="frm_complejidad_ambiental.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_ambiental$4" sourceFile="frm_complejidad_ambiental.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_tecnica" sourceFile="frm_complejidad_tecnica.java" interface="false" size="523" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_tecnica$1" sourceFile="frm_complejidad_tecnica.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_tecnica$10" sourceFile="frm_complejidad_tecnica.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_tecnica$11" sourceFile="frm_complejidad_tecnica.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_tecnica$12" sourceFile="frm_complejidad_tecnica.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_tecnica$13" sourceFile="frm_complejidad_tecnica.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_tecnica$14" sourceFile="frm_complejidad_tecnica.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_tecnica$15" sourceFile="frm_complejidad_tecnica.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_tecnica$16" sourceFile="frm_complejidad_tecnica.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_tecnica$2" sourceFile="frm_complejidad_tecnica.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_tecnica$3" sourceFile="frm_complejidad_tecnica.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_tecnica$4" sourceFile="frm_complejidad_tecnica.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_tecnica$5" sourceFile="frm_complejidad_tecnica.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_tecnica$6" sourceFile="frm_complejidad_tecnica.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_tecnica$7" sourceFile="frm_complejidad_tecnica.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_tecnica$8" sourceFile="frm_complejidad_tecnica.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_complejidad_tecnica$9" sourceFile="frm_complejidad_tecnica.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_cu_ajustado" sourceFile="frm_cu_ajustado.java" interface="false" size="94" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_cu_ajustado$1" sourceFile="frm_cu_ajustado.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_esfuerzo" sourceFile="frm_esfuerzo.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_peso_cu" sourceFile="frm_peso_cu.java" interface="false" size="272" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_peso_cu$1" sourceFile="frm_peso_cu.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_peso_cu$10" sourceFile="frm_peso_cu.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_peso_cu$11" sourceFile="frm_peso_cu.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_peso_cu$12" sourceFile="frm_peso_cu.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_peso_cu$2" sourceFile="frm_peso_cu.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_peso_cu$3" sourceFile="frm_peso_cu.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_peso_cu$4" sourceFile="frm_peso_cu.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_peso_cu$5" sourceFile="frm_peso_cu.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_peso_cu$6" sourceFile="frm_peso_cu.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_peso_cu$7" sourceFile="frm_peso_cu.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_peso_cu$8" sourceFile="frm_peso_cu.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_peso_cu$9" sourceFile="frm_peso_cu.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_principal" sourceFile="frm_principal.java" interface="false" size="131" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_principal$1" sourceFile="frm_principal.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_principal$2" sourceFile="frm_principal.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_principal$3" sourceFile="frm_principal.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_principal$4" sourceFile="frm_principal.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_principal$5" sourceFile="frm_principal.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_principal$6" sourceFile="frm_principal.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_principal$7" sourceFile="frm_principal.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_principal$8" sourceFile="frm_principal.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_punto_cu" sourceFile="frm_punto_cu.java" interface="false" size="104" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_punto_cu$1" sourceFile="frm_punto_cu.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.casouso.frm_punto_cu$2" sourceFile="frm_punto_cu.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="vistas.puntofuncion" total_bugs="0" total_types="41" total_size="1107">
+      <ClassStats class="vistas.puntofuncion.arranque" sourceFile="arranque.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.conectar" sourceFile="conectar.java" interface="false" size="96" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.conectar$1" sourceFile="conectar.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.conectar$2" sourceFile="conectar.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.conectar$3" sourceFile="conectar.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.conectar$4" sourceFile="conectar.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste" sourceFile="form_ajuste.java" interface="false" size="453" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$1" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$10" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$11" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$12" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$13" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$14" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$15" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$16" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$17" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$18" sourceFile="form_ajuste.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$18$1" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$2" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$3" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$4" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$5" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$6" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$7" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$8" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_ajuste$9" sourceFile="form_ajuste.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_calculo" sourceFile="form_calculo.java" interface="false" size="104" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_calculo$1" sourceFile="form_calculo.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_calculo$2" sourceFile="form_calculo.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_calculo$2$1" sourceFile="form_calculo.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_puntofuncion" sourceFile="form_puntofuncion.java" interface="false" size="187" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_puntofuncion$1" sourceFile="form_puntofuncion.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_puntofuncion$2" sourceFile="form_puntofuncion.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_puntofuncion$3" sourceFile="form_puntofuncion.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_puntofuncion$4" sourceFile="form_puntofuncion.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_puntofuncion$5" sourceFile="form_puntofuncion.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_puntofuncion$6" sourceFile="form_puntofuncion.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_puntofuncion$7" sourceFile="form_puntofuncion.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_puntofuncion$8" sourceFile="form_puntofuncion.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_puntofuncion$9" sourceFile="form_puntofuncion.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="vistas.puntofuncion.form_puntofuncion$9$1" sourceFile="form_puntofuncion.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="449" invocations="1927" avgMicrosecondsPerInvocation="233" maxMicrosecondsPerInvocation="13430" standardDeviationMicrosecondsPerInvocation="629"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="244" invocations="1932" avgMicrosecondsPerInvocation="126" maxMicrosecondsPerInvocation="2282" standardDeviationMicrosecondsPerInvocation="139"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="218" invocations="488" avgMicrosecondsPerInvocation="446" maxMicrosecondsPerInvocation="9339" standardDeviationMicrosecondsPerInvocation="1026"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="200" invocations="488" avgMicrosecondsPerInvocation="410" maxMicrosecondsPerInvocation="9034" standardDeviationMicrosecondsPerInvocation="844"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="155" invocations="326" avgMicrosecondsPerInvocation="478" maxMicrosecondsPerInvocation="36797" standardDeviationMicrosecondsPerInvocation="2769"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="134" invocations="1190" avgMicrosecondsPerInvocation="112" maxMicrosecondsPerInvocation="7251" standardDeviationMicrosecondsPerInvocation="255"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="105" invocations="368" avgMicrosecondsPerInvocation="287" maxMicrosecondsPerInvocation="11391" standardDeviationMicrosecondsPerInvocation="1156"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="102" invocations="326" avgMicrosecondsPerInvocation="313" maxMicrosecondsPerInvocation="23005" standardDeviationMicrosecondsPerInvocation="1669"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.taintanalysis.TaintDataflowEngine" totalMilliseconds="101" invocations="326" avgMicrosecondsPerInvocation="311" maxMicrosecondsPerInvocation="16995" standardDeviationMicrosecondsPerInvocation="1172"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="100" invocations="326" avgMicrosecondsPerInvocation="309" maxMicrosecondsPerInvocation="17884" standardDeviationMicrosecondsPerInvocation="1342"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="76" invocations="488" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="2781" standardDeviationMicrosecondsPerInvocation="319"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="74" invocations="326" avgMicrosecondsPerInvocation="228" maxMicrosecondsPerInvocation="8885" standardDeviationMicrosecondsPerInvocation="781"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="72" invocations="366" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="5832" standardDeviationMicrosecondsPerInvocation="582"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="62" invocations="488" avgMicrosecondsPerInvocation="127" maxMicrosecondsPerInvocation="16011" standardDeviationMicrosecondsPerInvocation="736"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="61" invocations="594" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="11286" standardDeviationMicrosecondsPerInvocation="555"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="51" invocations="488" avgMicrosecondsPerInvocation="106" maxMicrosecondsPerInvocation="2048" standardDeviationMicrosecondsPerInvocation="219"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="46" invocations="295" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="5310" standardDeviationMicrosecondsPerInvocation="498"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="44" invocations="326" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="19917" standardDeviationMicrosecondsPerInvocation="1132"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="41" invocations="488" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="9187" standardDeviationMicrosecondsPerInvocation="475"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="40" invocations="488" avgMicrosecondsPerInvocation="83" maxMicrosecondsPerInvocation="4574" standardDeviationMicrosecondsPerInvocation="276"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="39" invocations="1875" avgMicrosecondsPerInvocation="21" maxMicrosecondsPerInvocation="686" standardDeviationMicrosecondsPerInvocation="46"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="38" invocations="488" avgMicrosecondsPerInvocation="78" maxMicrosecondsPerInvocation="1803" standardDeviationMicrosecondsPerInvocation="169"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="37" invocations="488" avgMicrosecondsPerInvocation="76" maxMicrosecondsPerInvocation="6163" standardDeviationMicrosecondsPerInvocation="482"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="29" invocations="488" avgMicrosecondsPerInvocation="59" maxMicrosecondsPerInvocation="1518" standardDeviationMicrosecondsPerInvocation="164"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="27" invocations="102" avgMicrosecondsPerInvocation="267" maxMicrosecondsPerInvocation="4472" standardDeviationMicrosecondsPerInvocation="715"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="26" invocations="488" avgMicrosecondsPerInvocation="54" maxMicrosecondsPerInvocation="6201" standardDeviationMicrosecondsPerInvocation="292"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="23" invocations="102" avgMicrosecondsPerInvocation="229" maxMicrosecondsPerInvocation="4678" standardDeviationMicrosecondsPerInvocation="676"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="21" invocations="326" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="2203" standardDeviationMicrosecondsPerInvocation="200"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUncalledPrivateMethods" totalMilliseconds="19" invocations="102" avgMicrosecondsPerInvocation="188" maxMicrosecondsPerInvocation="547" standardDeviationMicrosecondsPerInvocation="81"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="18" invocations="102" avgMicrosecondsPerInvocation="177" maxMicrosecondsPerInvocation="2842" standardDeviationMicrosecondsPerInvocation="422"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="17" invocations="102" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="2364" standardDeviationMicrosecondsPerInvocation="366"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="17" invocations="326" avgMicrosecondsPerInvocation="54" maxMicrosecondsPerInvocation="2500" standardDeviationMicrosecondsPerInvocation="196"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="17" invocations="102" avgMicrosecondsPerInvocation="171" maxMicrosecondsPerInvocation="5384" standardDeviationMicrosecondsPerInvocation="562"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="17" invocations="102" avgMicrosecondsPerInvocation="169" maxMicrosecondsPerInvocation="2824" standardDeviationMicrosecondsPerInvocation="453"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="16" invocations="102" avgMicrosecondsPerInvocation="157" maxMicrosecondsPerInvocation="2547" standardDeviationMicrosecondsPerInvocation="465"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.password.ConstantPasswordDetector" totalMilliseconds="15" invocations="102" avgMicrosecondsPerInvocation="153" maxMicrosecondsPerInvocation="2775" standardDeviationMicrosecondsPerInvocation="406"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="13" invocations="25535" avgMicrosecondsPerInvocation="0" maxMicrosecondsPerInvocation="39" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUnrelatedTypesInGenericContainer" totalMilliseconds="13" invocations="102" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="7600" standardDeviationMicrosecondsPerInvocation="752"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="12" invocations="326" avgMicrosecondsPerInvocation="38" maxMicrosecondsPerInvocation="1061" standardDeviationMicrosecondsPerInvocation="104"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.file.PathTraversalDetector" totalMilliseconds="12" invocations="102" avgMicrosecondsPerInvocation="121" maxMicrosecondsPerInvocation="3668" standardDeviationMicrosecondsPerInvocation="401"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="11" invocations="6944" avgMicrosecondsPerInvocation="1" maxMicrosecondsPerInvocation="792" standardDeviationMicrosecondsPerInvocation="14"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="11" invocations="102" avgMicrosecondsPerInvocation="113" maxMicrosecondsPerInvocation="1677" standardDeviationMicrosecondsPerInvocation="280"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
