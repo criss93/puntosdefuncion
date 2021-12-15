@@ -23,10 +23,27 @@ public class frm_complejidad_ambiental extends javax.swing.JInternalFrame {
     ArrayList<Integer> listaValor = new ArrayList<>();
     float eFactor;
     float EF;
+    int cf1, cf2=0;
     
     public frm_complejidad_ambiental() {
         initComponents();
         con2.conectarCU();
+    }
+
+    public int getCf1() {
+        return cf1;
+    }
+
+    public void setCf1(int cf1) {
+        this.cf1 = cf1;
+    }
+
+    public int getCf2() {
+        return cf2;
+    }
+
+    public void setCf2(int cf2) {
+        this.cf2 = cf2;
     }
 
     public float getEF() {
@@ -72,11 +89,21 @@ public class frm_complejidad_ambiental extends javax.swing.JInternalFrame {
             System.out.println("Multip.: "+multiplicacion);
             eFactor = eFactor + multiplicacion;
         }
+        for (int i=0; i<6; i++){
+            if (listaValor.get(i) <3){
+		cf1 = cf1+1;
+            }    
+	}
+        for (int i=5; i<8; i++){
+            if (listaValor.get(i) >3){
+		cf2 = cf2+1;
+            }    
+	}
         resultado = eFactor;
         System.out.println("Resultado de calculo: " +resultado);
         return resultado;
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -449,7 +476,7 @@ public class frm_complejidad_ambiental extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtEFactorActionPerformed
 
-    private void cargarButtonActionPerformed(java.awt.event.ActionEvent evt) {                                             
+    private void cargarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cargarButtonActionPerformed
         try {
             Peso1textField.setText(con2.consultarComplejidadAmbiental("E1"));
             agregarLista("E1",Float.parseFloat(Peso1textField.getText()));
@@ -486,86 +513,86 @@ public class frm_complejidad_ambiental extends javax.swing.JInternalFrame {
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }                                            
+    }//GEN-LAST:event_cargarButtonActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void RelevanciajComboBox01ActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+    private void RelevanciajComboBox01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RelevanciajComboBox01ActionPerformed
         try {
             txtRelevancia01.setText(con2.consultarRelevancia(RelevanciajComboBox01.getSelectedItem().toString()));
             //agregarListaValor(Integer.parseInt(txtRelevancia01.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }                                                     
+    }//GEN-LAST:event_RelevanciajComboBox01ActionPerformed
 
-    private void RelevanciajComboBox02ActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+    private void RelevanciajComboBox02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RelevanciajComboBox02ActionPerformed
         try {
             txtRelevancia02.setText(con2.consultarRelevancia(RelevanciajComboBox02.getSelectedItem().toString()));
             //agregarListaValor(Integer.parseInt(txtRelevancia02.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }                                                     
+    }//GEN-LAST:event_RelevanciajComboBox02ActionPerformed
 
-    private void RelevanciajComboBox03ActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+    private void RelevanciajComboBox03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RelevanciajComboBox03ActionPerformed
         try {
             txtRelevancia03.setText(con2.consultarRelevancia(RelevanciajComboBox03.getSelectedItem().toString()));
             //agregarListaValor(Integer.parseInt(txtRelevancia03.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }                                                     
+    }//GEN-LAST:event_RelevanciajComboBox03ActionPerformed
 
-    private void RelevanciajComboBox04ActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+    private void RelevanciajComboBox04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RelevanciajComboBox04ActionPerformed
         try {
             txtRelevancia04.setText(con2.consultarRelevancia(RelevanciajComboBox04.getSelectedItem().toString()));
             //agregarListaValor(Integer.parseInt(txtRelevancia04.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }                                                     
+    }//GEN-LAST:event_RelevanciajComboBox04ActionPerformed
 
-    private void RelevanciajComboBox05ActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+    private void RelevanciajComboBox05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RelevanciajComboBox05ActionPerformed
         try {
             txtRelevancia05.setText(con2.consultarRelevancia(RelevanciajComboBox05.getSelectedItem().toString()));
             //agregarListaValor(Integer.parseInt(txtRelevancia05.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }                                                     
+    }//GEN-LAST:event_RelevanciajComboBox05ActionPerformed
 
-    private void RelevanciajComboBox06ActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+    private void RelevanciajComboBox06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RelevanciajComboBox06ActionPerformed
         try {
             txtRelevancia06.setText(con2.consultarRelevancia(RelevanciajComboBox06.getSelectedItem().toString()));
             //agregarListaValor(Integer.parseInt(txtRelevancia06.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }                                                     
+    }//GEN-LAST:event_RelevanciajComboBox06ActionPerformed
 
-    private void RelevanciajComboBox07ActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+    private void RelevanciajComboBox07ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RelevanciajComboBox07ActionPerformed
         try {
             txtRelevancia07.setText(con2.consultarRelevancia(RelevanciajComboBox07.getSelectedItem().toString()));
             //agregarListaValor(Integer.parseInt(txtRelevancia07.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }                                                     
+    }//GEN-LAST:event_RelevanciajComboBox07ActionPerformed
 
-    private void RelevanciajComboBox08ActionPerformed(java.awt.event.ActionEvent evt) {                                                      
+    private void RelevanciajComboBox08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RelevanciajComboBox08ActionPerformed
         try {
             txtRelevancia08.setText(con2.consultarRelevancia(RelevanciajComboBox08.getSelectedItem().toString()));
             //agregarListaValor(Integer.parseInt(txtRelevancia08.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_ambiental.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }                                                     
+    }//GEN-LAST:event_RelevanciajComboBox08ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         agregarListaValor(Integer.parseInt(txtRelevancia01.getText()));
         agregarListaValor(Integer.parseInt(txtRelevancia02.getText()));
         agregarListaValor(Integer.parseInt(txtRelevancia03.getText()));
@@ -579,13 +606,13 @@ public class frm_complejidad_ambiental extends javax.swing.JInternalFrame {
             System.out.println(listaValor.get(j));
         }
         float eFactor2 = 0;
-        float tf = 0;
+        //float ef = 0;
         eFactor2 = this.CalcularResultado(eFactor2);
         txtEFactor.setText(Float.toString(eFactor2));
         
-        tf = (float) (1.4 + ((-0.03) * eFactor2));
-        txtEF.setText(Float.toString(tf));
-    }                                        
+        this.setEF((float) (1.4 + ((-0.03) * eFactor2)));
+        txtEF.setText(Float.toString(this.EF));
+    }//GEN-LAST:event_jButton2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

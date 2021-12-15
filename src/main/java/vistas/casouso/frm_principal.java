@@ -5,6 +5,11 @@
  */
 package vistas.casouso;
 
+import vistas.casouso.frm_actores;
+import vistas.casouso.frm_cu_ajustado;
+import vistas.casouso.frm_peso_cu;
+import vistas.casouso.frm_punto_cu;
+
 /**
  *
  * @author Mari
@@ -182,9 +187,9 @@ public class frm_principal extends javax.swing.JFrame {
     }//GEN-LAST:event_itemUCPActionPerformed
 
     private void itemEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemEActionPerformed
-        //frm_esfuerzo ventana7 = new frm_esfuerzo();
-        //escritorio.add(ventana7);
-        //ventana7.show();
+        ventana7 = new frm_esfuerzo(ventana6.getPuntoDeCasoDeUsoAjustado(), ventana5.getCf1(), ventana5.getCf2());
+        escritorio.add(ventana7);
+        ventana7.show();
     }//GEN-LAST:event_itemEActionPerformed
 
     /**

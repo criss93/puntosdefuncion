@@ -39,7 +39,7 @@ public class frm_complejidad_tecnica extends javax.swing.JInternalFrame {
     public void setTCF(float TCF) {
         this.TCF = TCF;
     }
- 
+    
     public void agregarLista(String tipo, float peso){
        Peso p = new Peso (tipo,peso);
        listaPeso.add(p);
@@ -57,19 +57,23 @@ public class frm_complejidad_tecnica extends javax.swing.JInternalFrame {
        int v;
        multiplicacion = 0;
        tFactor = 0;
-       for (int i=0; i < listaPeso.size(); i++) {
-           for (int j=0; j < listaValor.size();j++){
-               p = listaPeso.get(i).getPeso();
-               v = listaValor.get(j);
-               
-             multiplicacion = p * v;
-             tFactor = tFactor + multiplicacion;      
-           }
-    
-           
-       }
-       resultado = tFactor;
-       return resultado;
+//       for (int i=0; i < listaPeso.size(); i++) {
+//           for (int j=0; j < listaValor.size();j++){
+//               p = listaPeso.get(i).getPeso();
+//               v = listaValor.get(j);
+//               
+//             multiplicacion = p * v;
+//             tFactor = tFactor + multiplicacion;      
+//           }   
+//       }
+        for (int i=0; i < listaPeso.size(); i++) {
+            p = listaPeso.get(i).getPeso();
+            v = listaValor.get(i);
+            multiplicacion = p * v;
+            tFactor = tFactor + multiplicacion;         
+        }
+        resultado = tFactor;
+        return resultado;
     }
    
     /**
@@ -556,7 +560,7 @@ public class frm_complejidad_tecnica extends javax.swing.JInternalFrame {
     private void cmbRelevancia06ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbRelevancia06ActionPerformed
         try {
             txtRelevancia06.setText(con2.consultarRelevancia(cmbRelevancia06.getSelectedItem().toString()));
-            agregarListaValor(Integer.parseInt(txtRelevancia06.getText()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia06.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_tecnica.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -566,7 +570,7 @@ public class frm_complejidad_tecnica extends javax.swing.JInternalFrame {
 
         try {
             txtRelevancia07.setText(con2.consultarRelevancia(cmbRelevancia07.getSelectedItem().toString()));
-            agregarListaValor(Integer.parseInt(txtRelevancia07.getText()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia07.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_tecnica.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -575,7 +579,7 @@ public class frm_complejidad_tecnica extends javax.swing.JInternalFrame {
     private void cmbRelevancia05ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbRelevancia05ActionPerformed
         try {
             txtRelevancia05.setText(con2.consultarRelevancia(cmbRelevancia05.getSelectedItem().toString()));
-            agregarListaValor(Integer.parseInt(txtRelevancia05.getText()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia05.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_tecnica.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -584,7 +588,7 @@ public class frm_complejidad_tecnica extends javax.swing.JInternalFrame {
     private void cmbRelevancia04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbRelevancia04ActionPerformed
         try {
             txtRelevancia04.setText(con2.consultarRelevancia(cmbRelevancia04.getSelectedItem().toString()));
-            agregarListaValor(Integer.parseInt(txtRelevancia04.getText()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia04.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_tecnica.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -593,7 +597,7 @@ public class frm_complejidad_tecnica extends javax.swing.JInternalFrame {
     private void cmbRelevancia03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbRelevancia03ActionPerformed
         try {
             txtRelevancia03.setText(con2.consultarRelevancia(cmbRelevancia03.getSelectedItem().toString()));
-            agregarListaValor(Integer.parseInt(txtRelevancia03.getText()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia03.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_tecnica.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -602,7 +606,7 @@ public class frm_complejidad_tecnica extends javax.swing.JInternalFrame {
     private void cmbRelevancia02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbRelevancia02ActionPerformed
         try {
             txtRelevancia02.setText(con2.consultarRelevancia(cmbRelevancia02.getSelectedItem().toString()));
-            agregarListaValor(Integer.parseInt(txtRelevancia02.getText()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia02.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_tecnica.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -611,7 +615,7 @@ public class frm_complejidad_tecnica extends javax.swing.JInternalFrame {
     private void cmbRelevancia13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbRelevancia13ActionPerformed
         try {
             txtRelevancia13.setText(con2.consultarRelevancia(cmbRelevancia13.getSelectedItem().toString()));
-            agregarListaValor(Integer.parseInt(txtRelevancia13.getText()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia13.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_tecnica.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -620,7 +624,7 @@ public class frm_complejidad_tecnica extends javax.swing.JInternalFrame {
     private void cmbRelevancia12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbRelevancia12ActionPerformed
         try {
             txtRelevancia12.setText(con2.consultarRelevancia(cmbRelevancia12.getSelectedItem().toString()));
-            agregarListaValor(Integer.parseInt(txtRelevancia12.getText()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia12.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_tecnica.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -629,7 +633,7 @@ public class frm_complejidad_tecnica extends javax.swing.JInternalFrame {
     private void cmbRelevancia11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbRelevancia11ActionPerformed
         try {
             txtRelevancia11.setText(con2.consultarRelevancia(cmbRelevancia11.getSelectedItem().toString()));
-            agregarListaValor(Integer.parseInt(txtRelevancia11.getText()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia11.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_tecnica.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -638,7 +642,7 @@ public class frm_complejidad_tecnica extends javax.swing.JInternalFrame {
     private void cmbRelevancia10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbRelevancia10ActionPerformed
         try {
             txtRelevancia10.setText(con2.consultarRelevancia(cmbRelevancia10.getSelectedItem().toString()));
-            agregarListaValor(Integer.parseInt(txtRelevancia10.getText()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia10.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_tecnica.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -647,7 +651,7 @@ public class frm_complejidad_tecnica extends javax.swing.JInternalFrame {
     private void cmbRelevancia09ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbRelevancia09ActionPerformed
         try {
             txtRelevancia09.setText(con2.consultarRelevancia(cmbRelevancia09.getSelectedItem().toString()));     
-            agregarListaValor(Integer.parseInt(txtRelevancia09.getText()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia09.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_tecnica.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -656,7 +660,7 @@ public class frm_complejidad_tecnica extends javax.swing.JInternalFrame {
     private void cmbRelevancia08ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbRelevancia08ActionPerformed
         try {
             txtRelevancia08.setText(con2.consultarRelevancia(cmbRelevancia08.getSelectedItem().toString()));
-            agregarListaValor(Integer.parseInt(txtRelevancia08.getText()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia08.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_tecnica.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -667,21 +671,35 @@ public class frm_complejidad_tecnica extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnSalirActionPerformed
 
     private void btnCalcularFactoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularFactoresActionPerformed
-
+        //Carga del Array ListaValor
+        agregarListaValor(Integer.parseInt(txtRelevancia01.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia02.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia03.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia04.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia05.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia06.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia07.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia08.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia09.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia10.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia11.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia12.getText()));
+        agregarListaValor(Integer.parseInt(txtRelevancia13.getText()));
+        //Final de Carga del Array ListaValor
         float tFactor2 = 0;
-        float tcf = 0;
-        this.CalcularResultado(tFactor2);
+        //float tcf = 0;
+        tFactor2=CalcularResultado(tFactor2);
         
         txtFactor.setText(Float.toString(tFactor2));
         
-        tcf = (float) (0.6 + (0.01 * tFactor2));
-        txtTCF.setText(Float.toString(tcf));
+        setTCF((float) (0.6 + (0.01 * tFactor2)));
+        txtTCF.setText(Float.toString(this.getTCF()));
     }//GEN-LAST:event_btnCalcularFactoresActionPerformed
 
     private void cmbRelevancia01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbRelevancia01ActionPerformed
         try {
             txtRelevancia01.setText(con2.consultarRelevancia((cmbRelevancia01.getSelectedItem().toString())));
-            agregarListaValor(Integer.parseInt(txtRelevancia01.getText()));
+            //agregarListaValor(Integer.parseInt(txtRelevancia01.getText()));
         } catch (SQLException ex) {
             Logger.getLogger(frm_complejidad_tecnica.class.getName()).log(Level.SEVERE, null, ex);
         }
