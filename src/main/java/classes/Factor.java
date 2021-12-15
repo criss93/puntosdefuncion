@@ -14,14 +14,14 @@ public class Factor {
     
     String tipo;
     int valor;
-    int factor;
+    int factorSeleccionado;
     
     public Factor(){   
     }
     public Factor (String tipo,int valor,int factor){
        this.tipo = tipo;
        this.valor = valor;
-       this.factor = factor;
+       this.factorSeleccionado = factor;
  
     }
 
@@ -33,8 +33,8 @@ public class Factor {
         return valor;
     }
 
-    public int getFactor() {
-        return factor;
+    public int getFactorSeleccionado() {
+        return factorSeleccionado;
     }
 
     public void setTipo(String tipo) {
@@ -45,8 +45,8 @@ public class Factor {
         this.valor = valor;
     }
 
-    public void setFactor(int factor) {
-        this.factor = factor;
+    public void setFactorSeleccionado(int factor) {
+        this.factorSeleccionado = factor;
     }
 
     

@@ -5,8 +5,6 @@
  */
 package classes;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author Mari
@@ -14,12 +12,12 @@ import java.util.ArrayList;
 public class Complejidad {
     
     String tipo;
-    int complejidad;
+    int complejidadSeleccionada;
     int valor;
     
      public Complejidad(String tipo, int complejidad, int valor){
        this.tipo = tipo;
-       this.complejidad = complejidad;
+       this.complejidadSeleccionada = complejidad;
        this.valor = valor;
        
     }
@@ -27,8 +25,8 @@ public class Complejidad {
         return tipo;
     }
     
-    public int getComplejidad() {
-        return complejidad;
+    public int getComplejidadSeleccionada() {
+        return complejidadSeleccionada;
     }
 
     public int getValor() {
@@ -39,8 +37,8 @@ public class Complejidad {
         this.tipo = tipo;
     }
 
-    public void setComplejidad(int complejidad) {
-        this.complejidad = complejidad;
+    public void setComplejidadSeleccionada(int complejidad) {
+        this.complejidadSeleccionada = complejidad;
     }
 
     public void setValor(int valor) {

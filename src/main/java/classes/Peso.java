@@ -11,12 +11,12 @@ package classes;
  */
 public class Peso {
     String tipo;
-    float peso;
+    float valor;
 
  
-    public Peso (String tipo, float peso){
+    public Peso (String tipo, float valor){
        this.tipo = tipo;
-       this.peso = peso;
+       this.valor = valor;
  
  
     }
@@ -25,16 +25,16 @@ public class Peso {
         this.tipo = tipo;
     }
 
-    public void setPeso(float peso) {
-        this.peso = peso;
+    public void setValor(float valor) {
+        this.valor = valor;
     }
 
     public String getTipo() {
         return tipo;
     }
 
-    public float getPeso() {
-        return peso;
+    public float getValor() {
+        return valor;
     }
     
     
