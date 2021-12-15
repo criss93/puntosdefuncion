@@ -2,5 +2,5 @@ projectKey=Metricas
 serverUrl=http://localhost:9000
 serverVersion=9.2.0.49834
 dashboardUrl=http://localhost:9000/dashboard?id=Metricas
-ceTaskId=AX288dx_frKZ_IfjHpOh
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AX288dx_frKZ_IfjHpOh
+ceTaskId=AX28-F3mfrKZ_IfjHpOi
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AX28-F3mfrKZ_IfjHpOi

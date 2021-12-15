@@ -37,7 +37,7 @@ public void conectar (){
     try{
         conn = DriverManager.getConnection(url,usuario,clave);
     } catch (HeadlessException | SQLException e){
-        e.printStackTrace();
+        System.out.println(e);
     }
     
 }
@@ -46,7 +46,7 @@ public void conectarCU (){
     try{
         conn2 = DriverManager.getConnection(url2,usuario,clave);
        } catch (HeadlessException | SQLException e){
-           e.printStackTrace();
+        System.out.println(e);
     }
     
 }
@@ -61,7 +61,7 @@ public String consultarComplejidad(String tipo, String campo) throws SQLExceptio
            complejidad = rs.getString(campo);
         }
     } catch (HeadlessException | SQLException e){
-        e.printStackTrace();
+        System.out.println(e);
     } 
     return complejidad;
 }
@@ -76,7 +76,7 @@ public String consultarInfluencia(String descripcion) throws SQLException{
         influencia = rs.getString("valor");
        }
     } catch (HeadlessException | SQLException e){
-        e.printStackTrace();
+        System.out.println(e);
     }
     return influencia;
 }
@@ -91,7 +91,7 @@ public String consultarActor(String tipo) throws SQLException{
            actor = rs.getString("factor");
        }
     } catch (HeadlessException | SQLException e){
-        e.printStackTrace();
+        System.out.println(e);
     }
     return actor;
 }
@@ -106,7 +106,7 @@ public String consultarTransacciones(String tipo) throws SQLException{
            transaccion = rs.getString("factor");
        }
     } catch (HeadlessException | SQLException e){
-        e.printStackTrace();
+        System.out.println(e);
     }
     return transaccion;
 }
@@ -121,7 +121,7 @@ public String consultarClases(String tipo) throws SQLException{
            clas = rs.getString("factor");
        }
     } catch (HeadlessException | SQLException e){
-        e.printStackTrace();
+        System.out.println(e);
     }
     return clas;
 }
@@ -131,7 +131,7 @@ public String consultarComplejidadTecnica(String tipo) throws SQLException{
     try{
        peso = this.obtenerPesoPorTipoDeComplejidad("tecnica", tipo);
     } catch (HeadlessException | SQLException e){
-        e.printStackTrace();
+        System.out.println(e);
     }
     return peso;
 }
@@ -146,7 +146,7 @@ public String consultarRelevancia(String tipo) throws SQLException{
            relevancia = rs.getString("valor");
        }
     } catch (HeadlessException | SQLException e){
-        e.printStackTrace();
+        System.out.println(e);
     }
     return relevancia;
 }
@@ -161,7 +161,7 @@ public String consultarAporte(Integer valor) throws SQLException{
            aporte = rs.getString("aporte");
        }
     } catch (HeadlessException | SQLException e){
-        e.printStackTrace();
+        System.out.println(e);
     }
     return aporte;
 }
@@ -171,7 +171,7 @@ public String consultarComplejidadAmbiental(String tipo) throws SQLException{
     try{
        peso = this.obtenerPesoPorTipoDeComplejidad("ambiental", tipo);
     } catch (HeadlessException | SQLException e){
-        e.printStackTrace();
+        System.out.println(e);
     }
     return peso;
 }
@@ -186,7 +186,7 @@ public String consultarComplejidadAmbiental(String tipo) throws SQLException{
             peso = rs.getString("peso");
         }
     } catch (HeadlessException | SQLException e){
-        e.printStackTrace();
+        System.out.println(e);
     }
     return peso;
 }
