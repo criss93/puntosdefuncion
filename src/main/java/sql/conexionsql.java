@@ -13,6 +13,7 @@ package sql;
 import java.awt.HeadlessException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -52,13 +53,18 @@ public void conectarCU (){
 }
 
 public String consultarComplejidad(String tipo, String campo) throws SQLException{
-    String query = "SELECT " + campo + " FROM complejidad where tipo = '" + tipo + "'";
-    String complejidad = "";
+    String complejidad = ""; 
+    Statement stmt1 = null;
+    PreparedStatement pstmt = null;
+    String query = "SELECT ? FROM actores where tipo = ?";
     try(Statement stmt = conn.createStatement()){
-        ResultSet rs = stmt.executeQuery(query);
+        pstmt = conn2.prepareStatement(query);
+        pstmt.setString(1, campo);
+        pstmt.setString(2, tipo);
+        ResultSet rs = pstmt.executeQuery();
 
         while ( rs.next() ) {
-           complejidad = rs.getString(campo);
+            complejidad = rs.getString("campo");
         }
     } catch (HeadlessException | SQLException e){
         System.out.println(e);
@@ -67,13 +73,15 @@ public String consultarComplejidad(String tipo, String campo) throws SQLExceptio
 }
 
 public String consultarInfluencia(String descripcion) throws SQLException{
-    String query = "SELECT valor FROM influencia where descripcion = '" + descripcion + "'";
     String influencia = "";
+    PreparedStatement pstmt = null;
+    String query = "SELECT valor FROM influencia where descripcion = ?";
     try(Statement stmt = conn.createStatement()){
-       ResultSet rs = stmt.executeQuery(query);
-        
-       while ( rs.next() ) {
-        influencia = rs.getString("valor");
+       pstmt = conn2.prepareStatement(query);
+       pstmt.setString(1, descripcion);
+       ResultSet rs2 = pstmt.executeQuery();
+       while ( rs2.next() ) {
+           influencia = rs2.getString("valor");
        }
     } catch (HeadlessException | SQLException e){
         System.out.println(e);
@@ -82,14 +90,16 @@ public String consultarInfluencia(String descripcion) throws SQLException{
 }
 
 public String consultarActor(String tipo) throws SQLException{
-       String query = "SELECT factor FROM actores where tipo = '" + tipo + "'";
-       String actor = "";
-       try(Statement stmt = conn2.createStatement();){
-        ResultSet rs = stmt.executeQuery(query);
-
-       while ( rs.next() ) {
-           actor = rs.getString("factor");
-       }
+    String actor = "";
+    PreparedStatement pstmt = null;
+    String query = "SELECT factor FROM actores where tipo = ?";
+    try(Statement stmt = conn2.createStatement();){
+        pstmt = conn2.prepareStatement(query);
+        pstmt.setString(1, tipo);
+        ResultSet rs2 = pstmt.executeQuery();
+        while ( rs2.next() ) {
+            actor = rs2.getString("factor");
+        }
     } catch (HeadlessException | SQLException e){
         System.out.println(e);
     }
@@ -97,14 +107,16 @@ public String consultarActor(String tipo) throws SQLException{
 }
 
 public String consultarTransacciones(String tipo) throws SQLException{
-    String query = "SELECT factor FROM transacciones where tipo = '" + tipo + "'";
     String transaccion = "";
+    PreparedStatement pstmt = null;
+    String query = "SELECT factor FROM transacciones where tipo = ?";
     try(Statement stmt = conn2.createStatement();){
-       ResultSet rs = stmt.executeQuery(query);
-        
-       while ( rs.next() ) {
-           transaccion = rs.getString("factor");
-       }
+      pstmt = conn2.prepareStatement(query);
+      pstmt.setString(1, tipo);
+      ResultSet rs2 = pstmt.executeQuery();
+      while ( rs2.next() ) {
+        transaccion = rs2.getString("factor");
+      }
     } catch (HeadlessException | SQLException e){
         System.out.println(e);
     }
@@ -112,13 +124,15 @@ public String consultarTransacciones(String tipo) throws SQLException{
 }
 
 public String consultarClases(String tipo) throws SQLException{
-    String query = "SELECT factor FROM clases where tipo = '" + tipo + "'";
     String clas = "";
+    PreparedStatement pstmt = null;
+    String query = "SELECT factor FROM clases where tipo = ?";
     try(Statement stmt = conn2.createStatement();){
-       ResultSet rs = stmt.executeQuery(query);
-       
-       while ( rs.next() ) {
-           clas = rs.getString("factor");
+       pstmt = conn2.prepareStatement(query);
+       pstmt.setString(1, tipo);
+       ResultSet rs2 = pstmt.executeQuery();
+       while ( rs2.next() ) {
+           clas = rs2.getString("factor");
        }
     } catch (HeadlessException | SQLException e){
         System.out.println(e);
@@ -128,8 +142,15 @@ public String consultarClases(String tipo) throws SQLException{
 
 public String consultarComplejidadTecnica(String tipo) throws SQLException{
     String peso = "";
-    try{
-       peso = this.obtenerPesoPorTipoDeComplejidad("tecnica", tipo);
+    PreparedStatement pstmt = null;
+    String query = "SELECT peso FROM tecnica where tipo = ?";
+    try(Statement stmt = conn2.createStatement();){
+       pstmt = conn2.prepareStatement(query);
+       pstmt.setString(1, tipo);
+       ResultSet rs2 = pstmt.executeQuery();
+       while ( rs2.next() ) {
+            peso = rs2.getString("peso");
+       }
     } catch (HeadlessException | SQLException e){
         System.out.println(e);
     }
@@ -137,13 +158,15 @@ public String consultarComplejidadTecnica(String tipo) throws SQLException{
 }
 
 public String consultarRelevancia(String tipo) throws SQLException{
-    String query = "SELECT valor FROM relevancia where tipo = '" + tipo + "'";
     String relevancia = "";
+    PreparedStatement pstmt = null;
+    String query = "SELECT valor FROM relevancia where tipo = ?";
     try(Statement stmt = conn2.createStatement();){
-       ResultSet rs = stmt.executeQuery(query);
-       
-       while ( rs.next() ) {
-           relevancia = rs.getString("valor");
+        pstmt = conn2.prepareStatement(query);
+        pstmt.setString(1, tipo);
+        ResultSet rs2 = pstmt.executeQuery();
+        while ( rs2.next() ) {
+            relevancia = rs2.getString("valor");
        }
     } catch (HeadlessException | SQLException e){
         System.out.println(e);
@@ -152,14 +175,16 @@ public String consultarRelevancia(String tipo) throws SQLException{
 }
 
 public String consultarAporte(Integer valor) throws SQLException{
-    String query = "SELECT tipo FROM relevancia where tipo = '" + valor + "'";
     String aporte = "";
+    PreparedStatement pstmt = null;
+    String query = "SELECT tipo FROM relevancia where tipo = ?";
     try(Statement stmt = conn2.createStatement();){
-       ResultSet rs = stmt.executeQuery(query);
-       
-       while ( rs.next() ) {
-           aporte = rs.getString("aporte");
-       }
+        pstmt = conn2.prepareStatement(query);
+        pstmt.setString(1, Integer.toString(valor));
+        ResultSet rs2 = pstmt.executeQuery();
+        while ( rs2.next() ) {
+            aporte = rs2.getString("valor");
+        }
     } catch (HeadlessException | SQLException e){
         System.out.println(e);
     }
@@ -168,22 +193,14 @@ public String consultarAporte(Integer valor) throws SQLException{
 
 public String consultarComplejidadAmbiental(String tipo) throws SQLException{
     String peso = "";
-    try{
-       peso = this.obtenerPesoPorTipoDeComplejidad("ambiental", tipo);
-    } catch (HeadlessException | SQLException e){
-        System.out.println(e);
-    }
-    return peso;
-}
-
-    public String obtenerPesoPorTipoDeComplejidad(String nombreBd, String tipo) throws SQLException{
-    String query = "SELECT peso FROM " + nombreBd + " where tipo = '" + tipo + "'";
-    String peso = "";
+    PreparedStatement pstmt = null;
+    String query = "SELECT peso FROM ambiental where tipo = ?";
     try(Statement stmt = conn2.createStatement();){
-       ResultSet rs = stmt.executeQuery(query);
-       
-        while ( rs.next() ) {
-            peso = rs.getString("peso");
+       pstmt = conn2.prepareStatement(query);
+        pstmt.setString(1, tipo);
+        ResultSet rs2 = pstmt.executeQuery();
+        while ( rs2.next() ) {
+            peso = rs2.getString("peso");
         }
     } catch (HeadlessException | SQLException e){
         System.out.println(e);
