@@ -110,6 +110,7 @@ public class Conectar extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCUActionPerformed
 
     private void btnpuntofuncionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpuntofuncionActionPerformed
+        con.conectarCU();
         String title = "Punto de Función";
         FormPuntosDeFuncion pf = new FormPuntosDeFuncion (this,false);
         pf.setDefaultCloseOperation(JFrame.ICONIFIED);

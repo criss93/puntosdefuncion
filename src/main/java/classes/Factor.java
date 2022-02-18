@@ -16,8 +16,7 @@ public class Factor {
     int valor;
     int factorSeleccionado;
     
-    public Factor(){   
-    }
+
     public Factor (String tipo,int valor,int factor){
        this.tipo = tipo;
        this.valor = valor;

@@ -17,6 +17,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 public class ConexionSql {
@@ -28,7 +30,6 @@ public class ConexionSql {
     String url2 = "jdbc:postgresql://localhost:5432/casodeuso";
     String usuario = "root";//CRIS
     //String clave = "admin";   //Esta es la pass de Maricel
-    String clave = "root";//CRIS
     
     String pswd ="root";//CRIS
   
@@ -36,18 +37,18 @@ public class ConexionSql {
     
 public void conectar (){
     try{
-        conn = DriverManager.getConnection(url,usuario,clave);
+        conn = DriverManager.getConnection(url,usuario,pswd);
     } catch (HeadlessException | SQLException e){
-        System.out.println(e);
+        Logger.getLogger(ConexionSql.class.getName()).log(Level.SEVERE, null, e);
     }
     
 }
 
 public void conectarCU (){
     try{
-        conn2 = DriverManager.getConnection(url2,usuario,clave);
+        conn2 = DriverManager.getConnection(url2,usuario,pswd);
        } catch (HeadlessException | SQLException e){
-        System.out.println(e);
+        Logger.getLogger(ConexionSql.class.getName()).log(Level.SEVERE, null, e);
     }
     
 }
@@ -56,18 +57,17 @@ public String consultarComplejidad(String tipo, String campo) throws SQLExceptio
     String complejidad = ""; 
     Statement stmt1 = null;
     PreparedStatement pstmt = null;
-    String query = "SELECT ? FROM actores where tipo = ?";
+    String query = "SELECT " + campo.toLowerCase() +" FROM complejidad where tipo = ? ";
     try(Statement stmt = conn.createStatement()){
-        pstmt = conn2.prepareStatement(query);
-        pstmt.setString(1, campo);
-        pstmt.setString(2, tipo);
+        pstmt = conn.prepareStatement(query);
+        pstmt.setString(1, tipo);
         ResultSet rs = pstmt.executeQuery();
 
         while ( rs.next() ) {
-            complejidad = rs.getString("campo");
+            complejidad = rs.getString(campo.toLowerCase());
         }
     } catch (HeadlessException | SQLException e){
-        System.out.println(e);
+        Logger.getLogger(ConexionSql.class.getName()).log(Level.SEVERE, null, e);
     } 
     return complejidad;
 }
@@ -77,14 +77,14 @@ public String consultarInfluencia(String descripcion) throws SQLException{
     PreparedStatement pstmt = null;
     String query = "SELECT valor FROM influencia where descripcion = ?";
     try(Statement stmt = conn.createStatement()){
-       pstmt = conn2.prepareStatement(query);
+       pstmt = conn.prepareStatement(query);
        pstmt.setString(1, descripcion);
        ResultSet rs2 = pstmt.executeQuery();
        while ( rs2.next() ) {
            influencia = rs2.getString("valor");
        }
     } catch (HeadlessException | SQLException e){
-        System.out.println(e);
+        Logger.getLogger(ConexionSql.class.getName()).log(Level.SEVERE, null, e);
     }
     return influencia;
 }
@@ -101,7 +101,7 @@ public String consultarActor(String tipo) throws SQLException{
             actor = rs2.getString("factor");
         }
     } catch (HeadlessException | SQLException e){
-        System.out.println(e);
+        Logger.getLogger(ConexionSql.class.getName()).log(Level.SEVERE, null, e);
     }
     return actor;
 }
@@ -118,7 +118,7 @@ public String consultarTransacciones(String tipo) throws SQLException{
         transaccion = rs2.getString("factor");
       }
     } catch (HeadlessException | SQLException e){
-        System.out.println(e);
+        Logger.getLogger(ConexionSql.class.getName()).log(Level.SEVERE, null, e);
     }
     return transaccion;
 }
@@ -135,24 +135,17 @@ public String consultarClases(String tipo) throws SQLException{
            clas = rs2.getString("factor");
        }
     } catch (HeadlessException | SQLException e){
-        System.out.println(e);
+        Logger.getLogger(ConexionSql.class.getName()).log(Level.SEVERE, null, e);
     }
     return clas;
 }
 
 public String consultarComplejidadTecnica(String tipo) throws SQLException{
     String peso = "";
-    PreparedStatement pstmt = null;
-    String query = "SELECT peso FROM tecnica where tipo = ?";
     try(Statement stmt = conn2.createStatement();){
-       pstmt = conn2.prepareStatement(query);
-       pstmt.setString(1, tipo);
-       ResultSet rs2 = pstmt.executeQuery();
-       while ( rs2.next() ) {
-            peso = rs2.getString("peso");
-       }
+        peso = this.consultarComplejidadPorTipo("tecnica", tipo);
     } catch (HeadlessException | SQLException e){
-        System.out.println(e);
+        Logger.getLogger(ConexionSql.class.getName()).log(Level.SEVERE, null, e);
     }
     return peso;
 }
@@ -169,7 +162,7 @@ public String consultarRelevancia(String tipo) throws SQLException{
             relevancia = rs2.getString("valor");
        }
     } catch (HeadlessException | SQLException e){
-        System.out.println(e);
+        Logger.getLogger(ConexionSql.class.getName()).log(Level.SEVERE, null, e);
     }
     return relevancia;
 }
@@ -186,15 +179,31 @@ public String consultarAporte(Integer valor) throws SQLException{
             aporte = rs2.getString("valor");
         }
     } catch (HeadlessException | SQLException e){
-        System.out.println(e);
+        Logger.getLogger(ConexionSql.class.getName()).log(Level.SEVERE, null, e);
     }
     return aporte;
 }
 
 public String consultarComplejidadAmbiental(String tipo) throws SQLException{
     String peso = "";
+    try(Statement stmt = conn2.createStatement();){
+        peso = this.consultarComplejidadPorTipo("ambiental", tipo);
+    } catch (HeadlessException | SQLException e){
+        Logger.getLogger(ConexionSql.class.getName()).log(Level.SEVERE, null, e);
+    }
+    return peso;
+}
+
+public String consultarComplejidadPorTipo(String tipoDeComplejidad, String tipo) throws SQLException{
+    String peso = "";
     PreparedStatement pstmt = null;
-    String query = "SELECT peso FROM ambiental where tipo = ?";
+    String query = ""; 
+    if (tipoDeComplejidad.equals("ambiental")) {
+        query = "SELECT peso FROM ambiental where tipo = ?";
+    } else {
+        query = "SELECT peso FROM tecnica where tipo = ?";
+    }
+    
     try(Statement stmt = conn2.createStatement();){
        pstmt = conn2.prepareStatement(query);
         pstmt.setString(1, tipo);
@@ -203,7 +212,7 @@ public String consultarComplejidadAmbiental(String tipo) throws SQLException{
             peso = rs2.getString("peso");
         }
     } catch (HeadlessException | SQLException e){
-        System.out.println(e);
+        Logger.getLogger(ConexionSql.class.getName()).log(Level.SEVERE, null, e);
     }
     return peso;
 }
